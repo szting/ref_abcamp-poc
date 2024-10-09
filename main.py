@@ -108,6 +108,8 @@ customer_service_agent = Agent(
 
 # Streamlit UI setup
 
+st run main.py --theme.base="light" --theme.primaryColor="#208123" --theme.backgroundColor="#FFFFFF" --theme.secondaryBackgroundColor="#d8f3d6" --theme.textColor="#0e712c" --theme.font="sans serif"
+
 # region <--------- Streamlit App Configuration --------->
 st.set_page_config(
     layout="centered",
