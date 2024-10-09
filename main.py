@@ -171,12 +171,12 @@ if prompt := st.chat_input():
                     DO NOT MAKE UP any information. If you DO NOT have the information or answers, response: 'I'm sorry. I do not have the answer to this enquiry.' 
                     Write a detailed response to the customer with the following:
                     1. Fellow Citizen, thank you for your enquiry.
-                    2. Use the FINAL answer to generate a reply DIRECTLY related to'{prompt}' in a clear and concise format.
+                    2. Use the FINAL answer to generate a response related to'{prompt}' in a clear and concise format.
                     3. If you DO NOT have the information or answers, just say: 'I'm sorry. I do not have the answer to this enquiry.
                     4. Lastly, provide customer a healthcare tip at the end of the conversation.
                     """,
         agent=customer_service_agent,
-        expected_output="Write a response that reply to the customer's query directly in a clear and concise format with the FINAL answer given by the information retrieval agent or researcher agent ONLY.",
+        expected_output="Write a response related to the customer's query directly in a clear and concise format with the FINAL answer given by the information retrieval agent or researcher agent ONLY.",
     )
     
     # Set up the crew and process tasks hierarchically
