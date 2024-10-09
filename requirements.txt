@@ -1,0 +1,8 @@
+pysqlite3-binary
+crewai
+crewai_tools
+langchain_core
+langchain_openai
+openai
+python-dotenv
+streamlit
