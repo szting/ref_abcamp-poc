@@ -108,19 +108,6 @@ customer_service_agent = Agent(
 
 # Streamlit UI setup
 
-# Define your custom CSS
-custom_css = """
-<style>
-.sidebar .sidebar-content {
-    background-color: #d8f3d6;
-    color: #0e712c;
-}
-</style>
-"""
-
-# Apply the custom CSS
-st.markdown(custom_css, unsafe_allow_html=True)
-
 # region <--------- Streamlit App Configuration --------->
 st.set_page_config(
     layout="centered",
