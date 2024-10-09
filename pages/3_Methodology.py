@@ -11,4 +11,4 @@ st.title("About this App")
 
 st.write("This is a Streamlit App that demonstrates how to use the OpenAI API to generate text completions.")
 
-st.image("test-streamlit-pic", caption="Diagram flow")
+st.image("test-streamlit-pic.jpg", caption="Diagram flow")
