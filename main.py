@@ -5,6 +5,7 @@ sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 import os
 import streamlit as st
+import base64
 from crewai import Crew, Process, Agent, Task
 from crewai_tools import ScrapeWebsiteTool, PDFSearchTool, FileReadTool
 from langchain_core.callbacks import BaseCallbackHandler
@@ -114,20 +115,21 @@ st.set_page_config(
     page_title="My Streamlit App"
 )
 
-def add_bg_from_local():
+def add_bg_from_local(image_file):
+    with open(image_file, "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read())
     st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-image: url("./static/aicamp-backgrd-pic.jpg");
-            background-size: cover;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
+    f"""
+    <style>
+    .stApp {{
+        background-image: url(data:image/{"jpg"};base64,{encoded_string.decode()});
+        background-size: cover
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
     )
-
-add_bg_from_local()
+add_bg_from_local('aicamp-backgrd-pic.jpg')    
 
 # endregion <--------- Streamlit App Configuration --------->
 
