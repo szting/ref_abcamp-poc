@@ -108,6 +108,12 @@ customer_service_agent = Agent(
 
 # Streamlit UI setup
 
+# region <--------- Streamlit App Configuration --------->
+st.set_page_config(
+    layout="centered",
+    page_title="My Streamlit App"
+)
+
 def add_bg_from_local():
     st.markdown(
         f"""
@@ -123,11 +129,6 @@ def add_bg_from_local():
 
 add_bg_from_local()
 
-# region <--------- Streamlit App Configuration --------->
-st.set_page_config(
-    layout="centered",
-    page_title="My Streamlit App"
-)
 # endregion <--------- Streamlit App Configuration --------->
 
 st.title("Dear Citizen, Welcome to your MediShield Life and MediSave's Info Buddy!")
