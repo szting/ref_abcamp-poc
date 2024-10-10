@@ -108,6 +108,21 @@ customer_service_agent = Agent(
 
 # Streamlit UI setup
 
+def add_bg_from_local():
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("./static/aicamp-backgrd-pic.jpg");
+            background-size: cover;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+add_bg_from_local()
+
 # region <--------- Streamlit App Configuration --------->
 st.set_page_config(
     layout="centered",
