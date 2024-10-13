@@ -49,8 +49,8 @@ https://www.cpf.gov.sg/member/healthcare-financing/using-your-medisave-savings/u
 https://www.cpf.gov.sg/member/healthcare-financing/using-your-medisave-savings/applying-to-use-your-healthcare-plans \n
 ''')
 
-st.markdown('''**Features:** \ n
+st.markdown('''**Features:** \n
 •	LLM-powered app to understand and respond to user queries in a conversational manner. \n
-•	**Hospital Ward Class Claim Computation Details:** Detailed breakdowns of what each claim covers, including daily hospital charges, surgery, total hospital bill, less: deductible, claimable amount, less: co-insurance, MediShield Life and MediSave pays amounts. \n
-•	**MediSave Explainer Tool:** Allows users to explore the usage of MediSave savings in their healthcare financing, including the eligibility and benefits. \n
+•	Hospital Ward Class Claim Computation Details: Detailed breakdowns of what each claim covers, including daily hospital charges, surgery, total hospital bill, less: deductible, claimable amount, less: co-insurance, MediShield Life and MediSave pays amounts. \n
+•	MediSave Explainer Tool: Allows users to explore the usage of MediSave savings in their healthcare financing, including the eligibility and benefits. \n
 ''')
