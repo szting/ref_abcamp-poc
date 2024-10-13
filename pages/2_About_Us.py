@@ -17,9 +17,9 @@ st.markdown('''**Use Cases for Navigating Healthcare Coverage and Protection (Me
         MediSave Explainer with Interactive Scenarios based on User Inputs: \n
         Users can explore usage of MediSave savings through interactive scenarios that illustrate how it can help with their healthcare expenses. This feature will enhance understanding by allowing users to see the practical implications of using MediSave savings in their healthcare financing.''')
 
-st.markdown("**Objectives:** \n
+st.markdown('''**Objectives:** \n
         •	To simplify the process of finding and comparing hospital ward class options.
-        •	To provide clear and concise information about healthcare financing features and benefits.")
+        •	To provide clear and concise information about healthcare financing features and benefits.''')
 
 st.write("This is a Streamlit App that demonstrates how to use the OpenAI API to generate text completions.")
 
