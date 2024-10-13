@@ -9,7 +9,7 @@ st.set_page_config(
 
 st.title("About Us Page")
 
-st.markdown('''**Use Cases for Navigating Healthcare Coverage and Protection (MediShield Life and Medisave):** 
+st.markdown('''**Use Cases for Navigating Healthcare Coverage and Protection (MediShield Life and Medisave):** \n
         Hospital Ward Class Planning Simulator:
         This use case will allow users to simulate various hospital ward class scenarios based on information, 
         such as benefits, government subsidies, deductible, co-insurance and exclusions under the MediShield Life Scheme. 
@@ -21,7 +21,7 @@ st.markdown('''**Use Cases for Navigating Healthcare Coverage and Protection (Me
         with their healthcare expenses. This feature will enhance understanding by allowing users to see the practical 
         implications of using MediSave savings in their healthcare financing.''')
 
-st.markdown('''**Objectives:**
+st.markdown('''**Objectives:** \n
         •	To simplify the process of finding and comparing hospital ward class options.
         •	To provide clear and concise information about healthcare financing features and benefits.''')
 
