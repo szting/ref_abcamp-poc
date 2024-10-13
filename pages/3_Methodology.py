@@ -7,7 +7,7 @@ st.set_page_config(
 )
 # endregion <--------- Streamlit App Configuration --------->
 
-st.title("Methodology Page")
+st.title("Methodology Page") 
 
 st.markdown('''**Detailed Flowchart Description For Hospital Ward Class Planning Simulator:** \n
 1.	User Submits Query: User enters a query in the Streamlit app and the query is sent to the BaseCallbackHandler. \n
