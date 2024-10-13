@@ -15,7 +15,7 @@ st.markdown('''**Use Cases for Navigating Healthcare Coverage and Protection (Me
         based on information, such as benefits, government subsidies, deductible, co-insurance 
         and exclusions under the MediShield Life Scheme. Users can use this information to plan 
         the hospital ward class that suits their budget and helping them make informed decision 
-        if additional private insurance coverage is required.\n
+        if additional private insurance coverage is required.\
         
         MediSave Explainer with Interactive Scenarios based on User Inputs: 
         Users can explore usage of MediSave savings through interactive scenarios that illustrate 
@@ -23,7 +23,7 @@ st.markdown('''**Use Cases for Navigating Healthcare Coverage and Protection (Me
         by allowing users to see the practical implications of using MediSave savings in their 
         healthcare financing.''')
 
-st.markdown('''**Objectives:** \n
+st.markdown('''**Objectives:** \
                 •	To simplify the process of finding and comparing hospital ward class options.
                 •	To provide clear and concise information about healthcare financing features and benefits.''')
 
