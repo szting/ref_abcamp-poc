@@ -42,15 +42,15 @@ st.markdown('''**Objectives:** \n
 ''')
 
 st.markdown('''**Data Sources**: This app will aggregate data from the following official government websites: \n
-•	https://www.cpf.gov.sg/content/dam/web/member/healthcare/documents/InformationBookletForTheNewlyInsured.pdf
-•	https://www.cpf.gov.sg/member/healthcare-financing/using-your-medisave-savings
-•	https://www.cpf.gov.sg/member/healthcare-financing/using-your-medisave-savings/using-medisave-for-outpatient-treatments
-•	https://www.cpf.gov.sg/member/healthcare-financing/using-your-medisave-savings/using-medisave-for-hospitalisation
-•	https://www.cpf.gov.sg/member/healthcare-financing/using-your-medisave-savings/applying-to-use-your-healthcare-plans
+•	https://www.cpf.gov.sg/content/dam/web/member/healthcare/documents/InformationBookletForTheNewlyInsured.pdf \n
+•	https://www.cpf.gov.sg/member/healthcare-financing/using-your-medisave-savings \n
+•	https://www.cpf.gov.sg/member/healthcare-financing/using-your-medisave-savings/using-medisave-for-outpatient-treatments \n
+•	https://www.cpf.gov.sg/member/healthcare-financing/using-your-medisave-savings/using-medisave-for-hospitalisation \n
+•	https://www.cpf.gov.sg/member/healthcare-financing/using-your-medisave-savings/applying-to-use-your-healthcare-plans \n
 ''')
 
 st.markdown('''**Features:**
-•	LLM-powered app to understand and respond to user queries in a conversational manner.
-•	**Hospital Ward Class Claim Computation Details:** Detailed breakdowns of what each claim covers, including daily hospital charges, surgery, total hospital bill, less: deductible, claimable amount, less: co-insurance, MediShield Life and MediSave pays amounts.
-•	**MediSave Explainer Tool:** Allows users to explore the usage of MediSave savings in their healthcare financing, including the eligibility and benefits.
+•	LLM-powered app to understand and respond to user queries in a conversational manner. \n
+•	**Hospital Ward Class Claim Computation Details:** Detailed breakdowns of what each claim covers, including daily hospital charges, surgery, total hospital bill, less: deductible, claimable amount, less: co-insurance, MediShield Life and MediSave pays amounts. \n
+•	**MediSave Explainer Tool:** Allows users to explore the usage of MediSave savings in their healthcare financing, including the eligibility and benefits. \n
 ''')
