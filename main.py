@@ -140,7 +140,7 @@ if not check_password():
 
 # Initialize the message log in session state if not already present
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you navigate your healthcare planning today? Your well-being is our priority!"}]
+    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you navigate your healthcare financing today? Your well-being is our priority!"}]
 
 # Display existing messages
 for msg in st.session_state.messages:
@@ -183,9 +183,10 @@ if prompt := st.chat_input():
                     DO NOT MAKE UP any information. If you DO NOT have the information or answers, response: 'I'm sorry. I do not have the answer to this enquiry.' 
                     Write a detailed response to the customer with the following:
                     1. Fellow Citizen, thank you for your enquiry.
-                    2. Use the FINAL answer to generate a response related to'{prompt}' in a clear and concise format. Present any computations and calculations in a table format. DO NOT state any sign off at the end of the response.
-                    3. If you DO NOT have the information or answers, just say: 'I'm sorry. I do not have the answer to this enquiry.
-                    4. Lastly, provide customer a healthcare tip at the end of the conversation.
+                    2. Use the FINAL answer to generate a response related to'{prompt}' in a clear and concise format. 
+                    3. Present CLAIMS computation and calculations in a table format including Daily hospital charges, Surgery, Total Hospital bill, Less: Deductible, Claimable amount, Less: Co-insurance, MediShield Life and MediSave pays. DO NOT state any sign off at the end of the response.
+                    4. If you DO NOT have the information or answers, just say: 'I'm sorry. I do not have the answer to this enquiry.
+                    5. Lastly, provide customer a healthcare tip at the end of the conversation.
                     """,
         agent=customer_service_agent,
         expected_output="Write a response related to the customer's query directly in a clear and concise format with the FINAL answer given by the information retrieval agent or researcher agent ONLY.",
