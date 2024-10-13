@@ -41,4 +41,16 @@ st.markdown('''**Objectives:** \n
 •	Decrease the workload on customer service representatives by automating responses to common queries.
 ''')
 
-st.write("This is a Streamlit App that demonstrates how to use the OpenAI API to generate text completions.")
+st.markdown('''**Data Sources**: This app will aggregate data from the following official government websites: \n
+•	https://www.cpf.gov.sg/content/dam/web/member/healthcare/documents/InformationBookletForTheNewlyInsured.pdf
+•	https://www.cpf.gov.sg/member/healthcare-financing/using-your-medisave-savings
+•	https://www.cpf.gov.sg/member/healthcare-financing/using-your-medisave-savings/using-medisave-for-outpatient-treatments
+•	https://www.cpf.gov.sg/member/healthcare-financing/using-your-medisave-savings/using-medisave-for-hospitalisation
+•	https://www.cpf.gov.sg/member/healthcare-financing/using-your-medisave-savings/applying-to-use-your-healthcare-plans
+''')
+
+st.markdown('''**Features:**
+•	LLM-powered app to understand and respond to user queries in a conversational manner.
+•	**Hospital Ward Class Claim Computation Details:** Detailed breakdowns of what each claim covers, including daily hospital charges, surgery, total hospital bill, less: deductible, claimable amount, less: co-insurance, MediShield Life and MediSave pays amounts.
+•	**MediSave Explainer Tool:** Allows users to explore the usage of MediSave savings in their healthcare financing, including the eligibility and benefits.
+''')
