@@ -20,7 +20,9 @@ st.write("Use Cases for Navigating Healthcare Coverage and Protection (MediShiel
         help with their healthcare expenses. This feature will enhance understanding by allowing users to see \n
         the practical implications of using MediSave savings in their healthcare financing.")
 
-st.write("This is a Streamlit App that demonstrates how to use the OpenAI API to generate text completions.")
+st.write("Objectives: \n
+        •	To simplify the process of finding and comparing hospital ward class options. \n
+        •	To provide clear and concise information about healthcare financing features and benefits.")
 
 st.write("This is a Streamlit App that demonstrates how to use the OpenAI API to generate text completions.")
 
