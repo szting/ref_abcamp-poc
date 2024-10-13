@@ -72,7 +72,6 @@ information_retrieval_agent = Agent(
                 and present in a clear, structured format, such as lists or tables, to enhance readability.
                 The data you collected MUST ONLY contains information from the PDF document""",
     tools=[pdf_search_tool],
-    verbose=True,
     llm=openai,
     callbacks=[CustomHandler("Medishield Information Provider")],
 )
@@ -86,7 +85,6 @@ researcher = Agent(
                 You are an expert in navigating and extracting relevant information on Singapore CPF medisave URLs, including its overview, eligibility, benefits,  
                 where can you use MediSave and the application process. The data you collected MUST ONLY contains information from Singapore CPF medisave URLs""",
     tools=[tool_webscrape],
-    verbose=True,
     llm=openai,
     callbacks=[CustomHandler("Medisave Researcher")],
 )
@@ -102,7 +100,6 @@ customer_service_agent = Agent(
                 including Medishield coverage and premiums payment, benefits, government subsidies,  
                 making a claim, exclusions, additional private insurance and MediSave usage.""",
     tools=[file_tool],
-    verbose=True,
     llm=openai,
     callbacks=[CustomHandler("Customer Service Officer")],
 )
@@ -158,13 +155,10 @@ if prompt := st.chat_input():
     task_medishield_information_provider = Task(
         description=f"""
                     Your instructions are as follows:
-                    Step 1: Check does '{prompt}' contain keywords: Medishield, benefit, coverage, premium, payment, policy, subsidies,
-                    deductible, claim, co-insurance, exclusions, insurance, healthcare, protection, hospital, ward, 
-                    outpatient, surgery, treatment,  pro-ration, withdrawal, limit.
-                    Step 2: If '{prompt}' NO keywords, PASS THE TASK TO NEXT AGENT AND END YOUR TASK IMMEDIATELY. 
-                    Step 3: If '{prompt}' have keywords, GO to PDF document in ({pdf_search_tool}).
-                    Step 4: Use the tools to extract every piece of relevant information from the PDF ONLY which are related to '{prompt}'.
-                    Step 5: Present the extracted information in a clear, structured format, such as lists or tables, to enhance readability.
+                    Step 1: Check does '{prompt}' MENTION ONLY medisave. If 'YES', PASS THE TASK TO NEXT AGENT AND END YOUR TASK IMMEDIATELY. 
+                    Step 2: If 'NO', GO to PDF document in ({pdf_search_tool}).
+                    Step 3: Use the tools to extract every piece of relevant information from the PDF ONLY which are related to '{prompt}'.
+                    Step 4: Present the extracted information in a clear, structured format, such as lists or tables, to enhance readability.
                     """,
         agent=information_retrieval_agent,
         expected_output="Present relevant information in a clear, structured format, such as lists or tables for the customer service agent to complete the task.",
@@ -189,7 +183,7 @@ if prompt := st.chat_input():
                     DO NOT MAKE UP any information. If you DO NOT have the information or answers, response: 'I'm sorry. I do not have the answer to this enquiry.' 
                     Write a detailed response to the customer with the following:
                     1. Fellow Citizen, thank you for your enquiry.
-                    2. Use the FINAL answer to generate a response related to'{prompt}' in a clear and concise format.
+                    2. Use the FINAL answer to generate a response related to'{prompt}' in a clear and concise format. Present any computations and calculations in a table format.
                     3. If you DO NOT have the information or answers, just say: 'I'm sorry. I do not have the answer to this enquiry.
                     4. Lastly, provide customer a healthcare tip at the end of the conversation.
                     """,
