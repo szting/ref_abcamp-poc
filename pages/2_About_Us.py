@@ -10,6 +10,7 @@ st.set_page_config(
 st.title("About Us Page")
 
 st.markdown('''**Use Cases for Navigating Healthcare Coverage and Protection (MediShield Life and Medisave):** \n
+        
         Hospital Ward Class Planning Simulator: \n
         This use case will allow users to simulate various hospital ward class scenarios 
         based on information, such as benefits, government subsidies, deductible, co-insurance 
@@ -25,8 +26,13 @@ st.markdown('''**Use Cases for Navigating Healthcare Coverage and Protection (Me
 
 st.markdown('''**Objectives:** \n
 
-                •	To simplify the process of finding and comparing hospital ward class options.
-                •	To provide clear and concise information about healthcare financing features and benefits.''')
+•	To simplify the process of finding and comparing hospital ward class options.
+•	To provide clear and concise information about healthcare financing features and benefits.
+•	To assist users in selecting the best hospital ward class plan based on their personal requirements and financial constraints.
+•	To offer guidance on usage of MediSave savings in their healthcare financing.
+•	Provide 24/7 access to information, making it easier for users to understand their options healthcare financing needs.
+•	Decrease the workload on customer service representatives by automating responses to common queries.
+''')
 
 st.write("This is a Streamlit App that demonstrates how to use the OpenAI API to generate text completions.")
 
