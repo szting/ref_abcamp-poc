@@ -58,7 +58,7 @@ cpf_medisave_urls = ('https://www.cpf.gov.sg/member/healthcare-financing/using-y
             'https://www.cpf.gov.sg/member/healthcare-financing/using-your-medisave-savings/applying-to-use-your-healthcare-plans',
             )
 tool_webscrape = ScrapeWebsiteTool(url=cpf_medisave_urls)
-pdf_search_tool = PDFSearchTool(pdf='https://www.cpf.gov.sg/content/dam/web/member/healthcare/documents/InformationBookletForTheNewlyInsured.pdf')
+pdf_search_tool = PDFSearchTool(pdf='https://www.cpf.gov.sg/content/dam/web/member/healthcare/documents/InformationBookletForTheNewlyInsured.pdf', 'https://www.moh.gov.sg/docs/librariesprovider5/medisave/table-of-surgical-procedures-(as-of-1-jan-2024).pdf')
 file_tool = FileReadTool()
 
 # Define agents with their specific roles and goals
