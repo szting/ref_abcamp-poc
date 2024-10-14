@@ -184,7 +184,7 @@ if prompt := st.chat_input():
                     Write a detailed response to the customer with the following:
                     1. Fellow Citizen, thank you for your enquiry.
                     2. Use the FINAL answer to generate a response related to'{prompt}' in a clear and concise format. 
-                    3. ONLY if '{prompt}' contains keywords: medishield, life, claim, hospital, charges, surgery, deductible or co-insurance THEN PRESENT the computation and calculations in a table format including Daily hospital charges, Surgery, Total Hospital bill, Less: Deductible, Claimable amount, Less: Co-insurance, MediShield Life and MediSave pays. DO NOT state any sign off at the end of the response.
+                    3. IF '{prompt}' contains keywords: medishield, life, claim, hospital, charges, surgery, deductible or co-insurance, ADD a table format of computation and calculations including Daily hospital charges, Surgery, Total Hospital bill, Less: Deductible, Claimable amount, Less: Co-insurance, MediShield Life and MediSave pays. DO NOT state any sign off at the end of the response.
                     4. If you DO NOT have any information or answers from information retrieval agent and researcher agent, just say: 'I'm sorry. I do not have the answer to this enquiry.
                     5. Lastly, provide customer a healthcare tip at the end of the conversation.
                     """,
