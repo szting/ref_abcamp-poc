@@ -37,7 +37,7 @@ st.markdown('''**Objectives:** \n
 •	To provide clear and concise information about healthcare financing features and benefits.\n
 •	To assist users in selecting the best hospital ward class plan based on their personal requirements and financial constraints.\n
 •	To offer guidance on usage of MediSave savings in their healthcare financing.\n
-•	Provide 24/7 access to information, making it easier for users to understand their options healthcare financing needs.\n
+•	Provide 24/7 access to information, making it easier for users to understand their options of healthcare financing needs.\n
 •	Decrease the workload on customer service representatives by automating responses to common queries.
 ''')
 
