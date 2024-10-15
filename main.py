@@ -207,7 +207,7 @@ if prompt := st.chat_input():
     st.session_state.messages.append({"role": "assistant", "content": result})
     st.chat_message("assistant").write(result)
 
-st.write("*Recommended query for MediShield Life Claim computation: **Medishield life claim of a 35 yrs old for 10 days stay in c ward for table 6b surgery**")
+st.write("*Recommended sample query for MediShield Life Claim computation: **Medishield life claim of a 35 yrs old for 10 days stay in c ward for table 6b surgery**")
 
 with st.expander("Disclaimer"): 
     st.write("**IMPORTANT NOTICE**: This web application is a prototype developed for **educational purposes only.** \
