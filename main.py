@@ -140,7 +140,7 @@ if not check_password():
 
 # Initialize the message log in session state if not already present
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you navigate your healthcare financing today? Your well-being is our priority!"}]
+    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you navigate your healthcare financing* today? Your well-being is our priority!"}]
 
 # Display existing messages
 for msg in st.session_state.messages:
@@ -184,7 +184,7 @@ if prompt := st.chat_input():
                     Write a detailed response to the customer with the following:
                     1. Fellow Citizen, thank you for your enquiry.
                     2. Use the FINAL answer to generate a response related to'{prompt}' in a clear and concise format. 
-                    3. IF '{prompt}' contains keywords: medishield, life, claim, hospital, charges, surgery, deductible or co-insurance, ADD a table format of computation and calculations including Daily hospital charges, Surgery, Total Hospital bill, Less: Deductible, Claimable amount, Less: Co-insurance, MediShield Life and MediSave pays. DO NOT state any sign off at the end of the response.
+                    3. IF '{prompt}' contains keywords: medishield, life, claim, hospital, charges, surgery, deductible or co-insurance, ADD a table format of computation and calculations including Daily ward charges, Surgical procedure, Total Hospital bill, Less: Deductible, Claimable amount, Less: Co-insurance, MediShield Life Pays, MediSave and/or cash. DO NOT state any sign off at the end of the response.
                     4. If you DO NOT have any information or answers from information retrieval agent and researcher agent, just say: 'I'm sorry. I do not have the answer to this enquiry.
                     5. Lastly, provide customer a healthcare tip at the end of the conversation.
                     """,
@@ -207,6 +207,7 @@ if prompt := st.chat_input():
     st.session_state.messages.append({"role": "assistant", "content": result})
     st.chat_message("assistant").write(result)
 
+st.write("*Recommended query for MediShield Life Claim computation: **Medishield life claim of a 35 yrs old for 10 days stay in c ward for table 6b surgery**")
 
 with st.expander("Disclaimer"): 
     st.write("**IMPORTANT NOTICE**: This web application is a prototype developed for **educational purposes only.** \
